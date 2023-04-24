@@ -1,0 +1,9 @@
+
+<launch>
+  <arg name="input" default="/ouster/points"/>
+
+  <node name="Track_3D" type="Track_3D" pkg="LiDAR_Tracking_3D">
+    <param name="input" value="$(arg input)"/>
+  </node>
+</launch>
+
